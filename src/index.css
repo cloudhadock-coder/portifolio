@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tahoma", "Segoe UI", "Geneva", "Verdana", sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.xp-window-shadow {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.xp-button-active:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.xp-gradient-title {
+  background: linear-gradient(to right, #0058e6 0%, #3a91f4 100%);
+}
+
+.xp-taskbar-gradient {
+  background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+}
+
+.xp-start-button {
+  background: linear-gradient(to bottom, #388e3c 0%, #4caf50 10%, #388e3c 20%, #388e3c 90%, #1b5e20 100%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.xp-window-border {
+  border: 3px solid #0058e6;
+  border-top-width: 1px;
+}
+
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-left: 1px solid #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border: 1px solid #f1f1f1;
+  box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #808080;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
